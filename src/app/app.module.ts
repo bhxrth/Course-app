@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddcourseComponent } from './addcourse/addcourse.component';
 import { ViewcourseAppComponent } from './viewcourse-app/viewcourse-app.component';
-
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule}   from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component'
 @NgModule({
   declarations: [
     AppComponent,
     AddcourseComponent,
-    ViewcourseAppComponent
+    ViewcourseAppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
